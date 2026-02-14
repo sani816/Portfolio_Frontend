@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sania Khatun | Full Stack Developer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+    <h2 class="logo">Sania <span>Khatun</span></h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO / HOME (UNIQUE SECTION) -->
+
+<section id="home" class="hero">
+
+<div class="hero-left">
+    <p class="hello">Hello, I'm</p>
+    <h1 class="name">Sania Khatun</h1>
+    <h2 class="role">A <span class="typing">Full Stack Developer</span></h2>
+
+    <p class="tagline">
+        Build modern, secure, Responsive and scalable web applications using
+        Node.js, Express, Firebase,Supabse and modern frontend technologies.
+    </p>
+
+    <a href="#projects" class="btn glow">View Projects</a>
+    <a href="assets/Sania_Khatun_Resume.pdf" class="btn outline" download>Download Resume</a>
+
+    <div class="social">
+        <a href="https://github.com/sani816"><i class="fab fa-github"></i></a>
+        <a href="https://www.naukri.com/mnjuser/profile?id=&altresid"><i class="fab fa-briefcase"></i></a>    
+    </div>
+</div>
+
+<div class="hero-right">
+    <img src="images/image.png" alt="Developer Cartoon" class="developer-img">
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+
+
+<div class="about-container">
+
+    <div class="about-text">
+        <p>
+        Dedicated Full Stack Developer with skills in frontend and backend technologies, including Node.js, Express, Firebase, and Supabase. Focused on solving problems through clean, efficient, and responsive web applications.
+
+        I create authentication systems, REST APIs, and responsive frontends.
+        My goal is to build real-world applications that are fast, secure, and user-friendly.
+        </p>
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <h2 class="section-title">Technical Skills</h2>
+
+  <div class="skills-circle">
+    <div class="skill-card"><i class="fab fa-html5"></i><p>HTML</p></div>
+    <div class="skill-card"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+    <div class="skill-card"><i class="fab fa-js"></i><p>JavaScript</p></div>
+    <div class="skill-card"><i class="fab fa-node-js"></i><p>Node.js</p></div>
+    <div class="skill-card"><i class="fas fa-server"></i><p>Express</p></div>
+    <div class="skill-card"><i class="fas fa-database"></i><p>Supabase</p></div>
+    <div class="skill-card"><i class="fas fa-fire"></i><p>Firebase</p></div>
+    <div class="skill-card"><i class="fab fa-github"></i><p>GitHub</p></div>
+    <div class="skill-card"><i class="fab fa-python"></i><p>Python</p></div>
+    <div class="skill-card"><i class="fab fa-react"></i><p>React</p></div>
+    <div class="skill-card"><i class="fab fa-c"></i><p>C</p></div>
+    <div class="skill-card"><i class="fab fa-git"></i><p>Git</p></div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects" class="projects">
+<h2 class="section-title">My Projects</h2>
+
+<div class="project-container">
+
+<div class="project">
+<img src="images/project1.png" class="project-img">
+<h2>Time Tracking App</h2>
+<p>Track your daily working time with authentication system.</p>
+<div class="project-btns">
+<a href="https://ozsiigfccpkny.mocha.app" class="live">Live Demo</a>
+<a href="https://github.com/sani816/Time_Tracking_App/tree/main" class="code">GitHub Code</a>
+</div>
+</div>
+
+<div class="project1">
+<img src="images/project2.png" class="project1-img">
+<h2>Study Planner</h2>
+<p>Help User To Schedule Study Plan.</p>
+<div class="project1-btns"></div>
+<a href="https://plan-my-grades.lovable.app" class="lives">Live Demo</a>
+<a href="https://github.com/sani816/Full_Stack_Project" class="codes">GitHub Code</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2 class="section-title">Contact Me</h2>
+
+<form id="contactForm" class="contact-card">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn glow">Send Message</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Sania Khatun | Full Stack Developer</p>
+</footer>
+<script src="script.js"></script>
+<script>
+const text = document.querySelector('.typing');
+text.innerHTML = text.textContent.split(' ').map(word => `<span>${word}</span>`).join(' ');
+</script>
+
+</body>
+</html>
