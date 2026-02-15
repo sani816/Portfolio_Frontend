@@ -10,7 +10,8 @@ form.addEventListener("submit", async (e) => {
     const message = formData.get("message");
 
     try {
-        const res = await fetch("/api/contact", {
+        const res = await fetch("https://portfolio-backend-ov6rvk9fj-saniakhatun622-4253s-projects.vercel.app/api
+/api/contact", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name, email, message })
